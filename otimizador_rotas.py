@@ -18,10 +18,6 @@ class OtimizadorRotas:
         return math.sqrt((p2.coordenada_x - p1.coordenada_x)**2 + (p2.coordenada_y - p1.coordenada_y)**2)
 
     def processar_vizinho_proximo(self, rota):
-        """
-        Recebe um objeto Rota, extrai os pedidos que foram inseridos nela,
-        ordena-os usando o algoritmo do vizinho mais próximo e calcula os totais.
-        """
         if not rota.pedidos:
             print("[AVISO]: Esta rota não possui pedidos para otimizar.")
             return

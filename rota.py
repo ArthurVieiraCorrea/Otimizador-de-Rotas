@@ -45,10 +45,6 @@ class Rota:
         self._pedidos.append(pedido)
 
     def __str__(self) -> str:
-        """
-        Formata a saída da rota de forma limpa e profissional,
-        convertendo a lista de objetos em um itinerário de texto legível.
-        """
         cabecalho = (
             f"Veículo: {self.veiculo.modelo}\n"
             f"Motorista: {self.motorista}\n"
